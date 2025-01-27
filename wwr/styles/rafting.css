@@ -1,8 +1,16 @@
-
+:root{
+  --primary-color: #1D3461;
+  --secondary-color: #1F487E;
+  --accent1-color: #376996;
+  --accent2-color: #6290C8;
+  --accent1-color-transparent: rgba(55, 105, 150, 0.5);
+  --heading-font:'Montserrat';
+  --text-font: 'Roboto';
+}
 
 h1,h2 {
   font-family: "Montserrat", serif;
-  font-weight: 100;
+  font-weight: 700;
   font-style: normal;
   color: darkblue;
 }
@@ -26,42 +34,45 @@ body {
   margin: 0 auto;
 }
 
-.hero img{
+.hero{
+  position: relative;
+}
+.hero img {
   display: block;
   width: 100%;
   height: auto;
+  
 }
-
-.hero {
-  position: relative;
-  text-align: center; 
-  color: white; 
-  font-family: "Monserrat", serif; 
-  height: 400px; 
-  overflow: hidden; 
-}
-
-
-.hero h1 {
+.hero h1{
   position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  font-size: 3rem; 
-  font-weight: bold;
-  margin: 0;
+  top: 10%;
+  width: 100%;
+  height: auto;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+h2{
+  color: var(--primary-color);
+}
+.hero article {
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  background-color: var(--accent1-color-transparent);
+  padding: 1rem;
+  max-width: 800px;
+  margin-left: 30px;
+}
+.hero article img {
+  float: right;
+  width: 200px;
+  height: auto;
+  margin-left: 1rem;
+  
 }
 
 .hero article p {
-  margin: 0 0 10px 0;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.hero article img {
-  float: right; 
-  width: 50px; 
-  height: auto;
-  margin-left: 10px; 
-  border-radius: 5px; 
+  color: white;
 }
