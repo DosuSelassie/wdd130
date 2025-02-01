@@ -76,3 +76,12 @@ h2{
 .hero article p {
   color: white;
 }
+
+header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+nav {
+
+}
