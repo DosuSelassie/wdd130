@@ -25,6 +25,11 @@ body {
   color: black;
 }
 
+.socialmedia {
+  display: flex;
+  justify-content: space-between;
+}
+
 .socialmedia a {
   text-decoration: none;
 }
@@ -79,9 +84,100 @@ h2{
 
 header {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 10px 40px;
 }
 
-nav {
-
+.navigation {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
 }
+
+.navigation a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--accent2-color);
+}
+
+.logo-image {
+  width: 64px;
+  height: auto;
+}
+
+a{
+  text-decoration: none;
+  font-family: var(--text-font);
+  font-size: 1.5rem;
+}
+section h2{
+  text-align: center;
+}
+.hist-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+     
+} 
+
+.hist-content p{
+  text-align: justify;
+}
+.image-hist{
+  width: 400px;
+  height: 200px;
+  padding: 8px;
+  /* padding-left: 10px; */
+}
+
+.adventure{
+  background-color: #eae4e4a0;
+}
+.adventure h2{
+  text-align: center;
+  padding-top: 5px;
+}
+.advent-images{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0;
+  padding:0;
+}
+figure{
+  padding: 0;
+  margin: 0;
+}
+figure img{
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+figcaption{
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer{
+  background-color:var(--accent1-color);
+  color: rgb(14, 1, 1);
+  bottom: 0;
+  margin-top:20px;
+}
+.social-tab{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.social-tab img{
+  width: 30px;
+  height: auto;
+}
+
+.social-tab a {
+  padding-right: 10px;
+}
+
