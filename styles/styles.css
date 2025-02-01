@@ -1,14 +1,21 @@
 nav {
     background-color: darkblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
 }
 h1 {
     color: darkblue;
+    border-bottom: 2px solid darkblue; /* Adjust thickness and color as needed */
 }
 main img {
     width: 150px;
@@ -20,11 +27,13 @@ main img {
 p {
     padding: 0;
 }
-main {
-    max-width: 840px;
-}
+
+
 aside {
    width: 20rem;
+   position: relative;
+   grid-column: 1/2;
+   grid-row: 1/2;
    margin: 1rem;
    border: 1px solid rgb(0 0 0 / 0.2);
    padding: 1rem;
@@ -41,3 +50,18 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+header,footer {
+    max-width:840px ;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
