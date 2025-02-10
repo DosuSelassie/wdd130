@@ -211,9 +211,12 @@ button:hover {
 .contact-label h2{
     position: absolute;
     padding-left: 10px;
-    top: 15%;
+    top: 25%;
     left: 35%;
-    color: white;   
+    text-align: center;
+    color: white; 
+    font-weight: 700;
+    font-size: xx-large; 
 }
 .map-detail{
   display: flex;
@@ -248,11 +251,12 @@ form{
   background-color: #eae4e44e;
   padding: 20px;
   margin-top: 50px;
+  width: 50%;
 }
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 50%;
+    width: 100%;
     padding: 8px;
     box-sizing: border-box;
 }
