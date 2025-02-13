@@ -33,8 +33,8 @@
           </div>
           <div class="company-address">
               <h1>Contact Us</h1>
-                <p>White Water Rafting</p>
-                <p>+233 554 274 915</p>
+              <p>White Water Rafting</p>
+              <p>+233 554 274 915</p>
               <p>Email: <a href="info@wwr.com">info@wwr.com</a></p>
           </div>
         </div>
@@ -43,36 +43,46 @@
         </div>
         <div class="form">
           <form action="/submit" method="post">
+            <!-- Name -->
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" required>
             
+            <!-- Email -->
             <label for="email">Your Email Address</label>
             <input type="email" id="email" name="email" required>
             
+            <!-- Radio Buttons: Purpose -->
             <fieldset class="radio-group">
               <legend>Purpose of Message</legend>
-              <label>
-                <input type="radio" name="purpose" value="General Inquiry" required> General Inquiry
+              
+              <label for="generalInquiry">
+                <input type="radio" id="generalInquiry" name="purpose" value="General Inquiry" required> General Inquiry
               </label><br>
-              <label>
-                <input type="radio" name="purpose" value="Reservation Question"> Reservation Question
+              
+              <label for="reservationQuestion">
+                <input type="radio" id="reservationQuestion" name="purpose" value="Reservation Question"> Reservation Question
               </label><br>
-              <label>
-                <input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion
+              
+              <label for="websiteSuggestion">
+                <input type="radio" id="websiteSuggestion" name="purpose" value="Website Suggestion"> Website Suggestion
               </label>
             </fieldset>
             
+            <!-- Message -->
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
             
+            <!-- Checkbox: Newsletter Subscription -->
             <fieldset class="checkbox-group">
-              <label>
-                <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+              <label for="subscription">
+                <input type="checkbox" id="subscription" name="subscribe"> Please subscribe me to the monthly newsletter
               </label>
             </fieldset>
             
+            <!-- Submit Button -->
             <button type="submit">Send Message</button>
           </form>
+          
         </div>
 
     </main>
