@@ -13,6 +13,119 @@ header {
   width: 80px;
   height: auto;
 }
+.hero{
+  position: relative;
+}
+.hero img{
+  display: block;
+  width: 100%;
+  height: auto;
+  
+}
+.hero h1{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(29, 52, 97, 0.8);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.hist h2{
+  text-align: center;
+}
+.hist-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+     
+} 
+.hist-content p{
+  text-align: justify;
+}
+.image-hist{
+  width: 400px;
+  height: auto;
+  padding: 8px;
+  padding-left: 10px;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  right: 20%;
+  background-color: rgba(255,255,255,0.8);
+  max-width: 800px;
+  padding: 1rem;
+ 
+  margin-left: 30px;
+}
+.hero article img{
+  float: right;
+  width: 200px;
+  height: auto;
+  margin-left: 1rem;
+  
+}
+
+.hero article p{
+  height: auto;
+  font-size: x-large;
+  margin-left: 1rem;
+  
+}
+.hist h2{
+  text-align: center;
+}
+.hist-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;    
+}
+
+.hist p{
+  font-size: xx-large; 
+}
+
+.adventure{
+  background-color: #eae4e4a0;
+}
+.adventure h2{
+  text-align: center;
+  padding-top: 5px;
+}
+.advent-images{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0;
+  padding:0;
+}
+figure{
+  padding: 0;
+  margin: 0;
+}
+figure img{
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+figcaption{
+  margin-top: 10px;
+  text-align: center;
+}
+.hist-content p{
+  text-align: justify;
+}
+.image-hist{
+  width: 400px;
+  height: auto;
+  padding: 8px;
+  padding-left: 10px;
+}
+
 
 .navigation {
   display: flex;
